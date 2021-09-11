@@ -2,14 +2,14 @@
 {
     using System;
 
-    class NM
+    static class NM
     {
         static int N;
         static int M;
 
         static bool[] visited;
 
-        static void Main(string[] args)
+        public static void Run()
         {
             string line = Console.ReadLine();
             var inputs = line.Split(' ');

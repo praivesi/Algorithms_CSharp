@@ -15,11 +15,11 @@
         }
     }
 
-    class Hiding
+    static class Hiding
     {
         static bool[] visited;
 
-        static void Main(string[] args)
+        public static void Run()
         {
             string line = Console.ReadLine();
             var inputs = line.Split(' ');
@@ -45,8 +45,6 @@
                 if (visited[curLoc.pos]) continue;
 
                 visited[curLoc.pos] = true;
-
-                //Console.WriteLine("curLoc.pos = " + curLoc.pos + " / curLoc.depth = " + curLoc.depth);
 
                 if (curLoc.pos == k)
                 {
